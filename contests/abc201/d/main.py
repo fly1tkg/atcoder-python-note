@@ -48,9 +48,8 @@ draw_flag = False
 
 def exec(game):
     # print(game)
-    
     global draw_flag
-
+    
     for opt in ['right', 'down']:
         result = game.copy()
         if not check(result, opt):
@@ -60,7 +59,7 @@ def exec(game):
         
         # ゲーム終了
         if result['x'] == (w - 1) and result['y'] == (h - 1):
-            # print(game)
+            print(game)
             if game['takahashi'] > game['aoki']:
                 print('Takahashi')
                 exit()

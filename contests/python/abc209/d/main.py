@@ -78,5 +78,5 @@ def resolve():
 
 if __name__ == "__main__":
   resolve()
-  print(road)
-  print(memo)
+  # print(road)
+  # print(memo)
